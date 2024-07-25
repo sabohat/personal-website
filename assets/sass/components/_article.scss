@@ -1,0 +1,15 @@
+.article-list li {
+    list-style: none;
+}
+
+.article-list {
+display: flex;
+flex-direction: column;
+gap:20px
+}
+
+.article-list li>a {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}

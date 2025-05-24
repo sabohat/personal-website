@@ -23,6 +23,21 @@
 		gtag('config', 'G-10FQLZSZTT');
 	</script>
 
+	<script>
+		if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+			console.log('Analytics disabled due to non-https or non-localhost');
+			return;
+		}
+		(function () {
+			var s = document.createElement('script');
+			s.async = true;
+			s.src = '//cdn.vercel.com/analytics/0.0.1/vercel.js';
+			s.setAttribute('data-version', '0.0.1');
+			document.body.appendChild(s);
+		})();
+	</script>
+
+
 	<!-- SEO META TAGS -->
 	<meta property="og:url" content="https://www.sabokhat.me/" />
 
